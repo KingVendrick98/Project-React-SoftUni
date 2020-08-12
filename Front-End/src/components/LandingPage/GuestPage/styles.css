@@ -1,7 +1,4 @@
 .landingPage{
-    background-image: url('/landingPage.jpg');
-    background-size: cover;
-    background-position: center;
     height: 100vh;
     color: rgb(254, 254, 254);
     line-height: 1.6;
@@ -13,9 +10,9 @@
 }
 
 .landingPage h1{
-    font-size: 80px;
+    font-size: 70px;
 }
 
-.landingPage p {
-    font-size: 40px;
+.landingPage h2 {
+    font-size: 50px;
 }

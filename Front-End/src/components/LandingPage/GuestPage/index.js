@@ -6,7 +6,7 @@ const GuestLandingPage = (props) => {
     return (
         <div className='landingPage'>
             <h1>Welcome to GameWatchers !</h1>
-            <p>The heaven for Gamers</p>
+            <h2>The heaven for Gamers</h2>
         </div>
     );
 }

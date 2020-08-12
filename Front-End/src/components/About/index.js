@@ -3,7 +3,7 @@ import './styles.css'
 
 const AboutPage = () => {
     return (
-        <div className="container">
+        <div className="about">
             <h1>What is GameWatchers ?</h1>
             <h2>
                 Firstly Welcome!<br/>
@@ -14,8 +14,10 @@ const AboutPage = () => {
 
                  
             </h2>
+            
             <h1>From GameWatchers creators</h1>
         </div>
+        
     );
 }
 
