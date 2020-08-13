@@ -1,7 +1,7 @@
 import React, { Fragment, useContext ,useState } from 'react';
 import userService from '../../services/userService'
 import loginValidator from '../../utils/loginValidator';
-import { Form, Button, Container, Row, Nav } from 'react-bootstrap';
+import { Form, Button, Container, Row, Nav, FormLabel } from 'react-bootstrap';
 import { AuthContext } from '../../contexts/auth';
 import './styles.css'
 
@@ -35,11 +35,17 @@ const Login = (props) => {
     return (
       <Fragment>
         <Container>
+            
           <Form style={{ padding: '200px', textAlign: 'center' }}>
+          <Form style={{textAlign: 'center' }}>
+                <FormLabel className="justify-content-md-center">
+                    Sign in 
+                </FormLabel>
+            </Form>
             <Row className="justify-content-md-center">
               <Form.Group controlId="formBasicEmail">
-                <Form.Label  style={{ textJustify: 'center' }}>Username:</Form.Label>
-                <Form.Control type="text" name="username" style={{ textAlign: 'center' }} placeholder="Enter Username" onChange={updateName} />
+                <Form.Label  style={{ textJustify: 'center' , margin: '10'}}>Username:</Form.Label>
+                <Form.Control type="text" name="username" style={{ textAlign: 'center', margin: '10' }} placeholder="Enter Username" onChange={updateName} />
               </Form.Group>
             </Row>
             <Row className="justify-content-md-center">

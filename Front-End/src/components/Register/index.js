@@ -35,6 +35,11 @@ const Register = (props) => {
     <Fragment>
       <Container>
         <Form style={{ marginTop: '200px', textAlign: 'center' }}>
+        <Form style={{textAlign: 'center' }}>
+                <Row className="justify-content-md-center">
+                    Sign up 
+                </Row>
+            </Form>
           <Row className="justify-content-md-center">
             <Form.Group>
               <Form.Label>Username:</Form.Label>
@@ -57,7 +62,7 @@ const Register = (props) => {
           <Row className="justify-content-md-center">
               <FormGroup>
               <Form.Text className="text-muted" style={{ textAlign: 'center' }}>
-                Already have an account?
+                Already have an account ?
                 <Nav.Link href="/login">Login</Nav.Link>
               </Form.Text>
               </FormGroup>
