@@ -22,7 +22,7 @@ module.exports = {
     post: {
         register: (req, res, next) => {
             const { username, password } = req.body;
-            models.User.create({ username, password, job: 'Software developer', email: 'blogIT@blogIT.com', address:"Aleko Konstantinov 18",phone:"0897999888" })
+            models.User.create({ username, password, job: 'Software developer', email: 'gameWatchers@gameWatchers.com', address:"Kaisa Hood Varna",phone:"0895764487" })
                 .then((createdUser) => res.send(createdUser))
                 .catch(next)
         },
