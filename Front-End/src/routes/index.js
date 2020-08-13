@@ -6,6 +6,7 @@ import GuestLandingPage from '../components/LandingPage/GuestPage';
 import AboutPage from '../components/About';
 import { AuthContextProvider } from '../contexts/auth';
 import { ToastContainer } from 'react-toastify';
+import Footer from '../components/Footer';
 
 const Navigation = () => {
     return (
@@ -28,6 +29,7 @@ const Navigation = () => {
                     pauseOnHover
                 />
             </AuthContextProvider>
+            <Footer />
         </Router>
     );
 }
