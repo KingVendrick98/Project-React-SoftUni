@@ -8,6 +8,7 @@ import { AuthContextProvider } from '../contexts/auth';
 import { ToastContainer } from 'react-toastify';
 import Footer from '../components/Footer';
 import Login from '../components/Login';
+import Logout from '../components/Logout'
 import Register from '../components/Register';
 
 const Navigation = () => {
@@ -19,6 +20,7 @@ const Navigation = () => {
                     <Route path="/" exact component={GuestLandingPage} />
                     <Route path="/about" exact component={AboutPage} />
                     <Route path="/login" exact component={Login} />
+                    <Route path="/logout" exact component={Logout} />
                     <Route path="/register" exact component={Register} />
                 </Switch>
                 <ToastContainer
