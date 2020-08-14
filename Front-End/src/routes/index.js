@@ -12,6 +12,9 @@ import Login from '../components/Login';
 import Logout from '../components/Logout'
 import Register from '../components/Register';
 import editProfile from '../components/ProfilePage/editProfile';
+import CreatePost from '../components/Posts/CreatePost';
+import MyPosts from '../components/Posts/myPosts';
+import FullPost from '../components/Posts/FullPost';
 
 const Navigation = () => {
     return (
@@ -26,6 +29,10 @@ const Navigation = () => {
                     <Route path="/register" exact component={Register} />
                     <Route path="/profile" exact component={Profile} />
                     <Route path="/editProfile" exact component={editProfile} />
+                    <Route path="/createPost" exact component={CreatePost} />
+                    <Route path="/myPosts" exact component={MyPosts} />
+                    <Route path="/post/:id" component={FullPost} />
+
                 </Switch>
                 <ToastContainer
                     position="top-center"
