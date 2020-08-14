@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 import Login from '../components/Login';
 import Logout from '../components/Logout'
 import Register from '../components/Register';
+import editProfile from '../components/ProfilePage/editProfile';
 
 const Navigation = () => {
     return (
@@ -24,6 +25,7 @@ const Navigation = () => {
                     <Route path="/logout" exact component={Logout} />
                     <Route path="/register" exact component={Register} />
                     <Route path="/profile" exact component={Profile} />
+                    <Route path="/editProfile" exact component={editProfile} />
                 </Switch>
                 <ToastContainer
                     position="top-center"
