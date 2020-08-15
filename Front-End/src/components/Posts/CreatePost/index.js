@@ -5,9 +5,11 @@ import postValidator from '../../../utils/postValidator';
 import './styles.css'
 
 
+
 class CreatePost extends Component {
 
   state = {
+    pictureUrl: '',
     title: '',
     description: '',
     content: ''
@@ -19,10 +21,10 @@ class CreatePost extends Component {
 
   submitHandler = () => {
 
-    const { title, description, content } = this.state;
+    const { title, description, content, pictureUrl } = this.state;
 
-    if (postValidator(title, description, content)) {
-      postService.create(title, description, content).then(() => {
+    if (postValidator(title, description, content, pictureUrl)) {
+      postService.create(title, description, content, pictureUrl).then(() => {
         this.props.history.push('/latest');
       });
     }
@@ -33,6 +35,14 @@ class CreatePost extends Component {
       <Fragment>
         <Container>
           <Form style={{ marginTop: '80px', textAlign: 'center' }}>
+          <Row className="justify-content-md-center">
+                <Row>
+                <Form.Label style={{marginTop: '10px'}}>Picture:</Form.Label>
+                </Row>
+              <Form.Group>
+                <Form.Control type="pictureUrl" name="pictureUrl" style={{ textAlign: 'center',marginTop: '10px' }} placeholder="Add picture" onChange={this.handleChange} />
+              </Form.Group>
+            </Row>
             <Row className="justify-content-md-center">
                 <Row>
                 <Form.Label style={{marginTop: '10px'}}>Title:</Form.Label>

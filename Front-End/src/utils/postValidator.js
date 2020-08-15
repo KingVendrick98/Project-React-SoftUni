@@ -1,7 +1,8 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function postValidator (title, description, content) {
+function postValidator (title, description, content, pictureUrl) {
+
   if(title === '' || title.length < 5 ) {
     toast.error('Title must be at least 5 characters long !');
     return false;

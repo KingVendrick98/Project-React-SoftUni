@@ -1,6 +1,6 @@
 .card-container {
     width: 300px;
-    height:430px;
+    height:450px;
     background: rgb(129, 129, 129);
     border-radius: 6px;
     position: absolute;
@@ -14,7 +14,7 @@
 }
 
 .upper-container{
-    height: 150px;
+    height: 70px;
     background: rgb(148, 0, 0);
 }
 

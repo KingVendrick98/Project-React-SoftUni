@@ -7,8 +7,9 @@ const postService = {
     getPost: function (id) {
         return axios.get(`${host}/posts${id ? `/${id}` : ''}`);
     },
-    create: function (title, description, content) {
+    create: function (title, description, content, pictureUrl) {
         return axios.post(`${host}/posts`,{
+                pictureUrl,
                 title,
                 description,
                 content

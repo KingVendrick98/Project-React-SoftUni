@@ -20,10 +20,10 @@ module.exports = {
     },
 
     post: (req, res, next) => {
-        const { title, description, content } = req.body;
+        const { pictureUrl, title, description, content } = req.body;
         const { _id } = req.user;
 
-        models.Posts.create({ title, description, content, author: _id })
+        models.Posts.create({ pictureUrl, title, description, content, author: _id})
             .then((createdPost) => {
                 return Promise.all([
                     models.User.updateOne({ _id }, { $push: { posts: createdPost } }),
@@ -38,8 +38,8 @@ module.exports = {
 
     put: (req, res, next) => {
         const id = req.params.id;
-        const { title, description, content } = req.body;
-        models.Posts.updateOne({ _id: id }, { title, description, content })
+        const { pictureUrl, title, description, content } = req.body;
+        models.Posts.updateOne({ _id: id }, { pictureUrl, title, description, content })
             .then((updatedPost) => res.send(updatedPost))
             .catch(next)
     },

@@ -5,6 +5,11 @@ const { String, Number, Boolean, ObjectId } = Schema.Types;
 
 const postSchema = new Schema({
 
+    pictureUrl:{
+        type: String,
+        required:true
+    },
+
     title:{
         type:String,
         required:true
@@ -12,7 +17,7 @@ const postSchema = new Schema({
 
     description: {
         type: String,
-        required: true,
+        required: true
     },
 
     content:{

@@ -23,6 +23,7 @@ const MyPosts = (props) => {
                         return <Post
                             key={post._id}
                             id={post._id}
+                            pictureUrl={post.pictureUrl}
                             description={post.description}
                             title={post.title}
                              author={post.author.username}/>
