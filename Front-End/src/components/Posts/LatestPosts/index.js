@@ -24,6 +24,7 @@ class LatestPosts extends Component {
     render() {
         const { posts } = this.state;
         return posts.length !== 0 ?
+        
             <div> {posts.map(post => {
                         return <Post
                             pictureUrl={post.pictureUrl}

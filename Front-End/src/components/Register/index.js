@@ -39,10 +39,10 @@ const Register = (props) => {
   return (
     <Fragment>
       <Container>
-        <Form style={{ marginTop: '200px', textAlign: 'center' }}>
+        <Form style={{ marginTop: '170px', textAlign: 'center' }}>
         <Form style={{textAlign: 'center' }}>
                 <Row className="justify-content-md-center">
-                    Sign up 
+                   <h1>Sign up </h1> 
                 </Row>
             </Form>
             <Row className="justify-content-md-center">

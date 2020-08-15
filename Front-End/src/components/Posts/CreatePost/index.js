@@ -35,6 +35,7 @@ class CreatePost extends Component {
       <Fragment>
         <Container>
           <Form style={{ marginTop: '80px', textAlign: 'center' }}>
+              <h1>Create Post</h1>
           <Row className="justify-content-md-center">
                 <Row>
                 <Form.Label style={{marginTop: '10px'}}>Picture:</Form.Label>

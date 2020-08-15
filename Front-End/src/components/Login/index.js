@@ -36,10 +36,10 @@ const Login = (props) => {
       <Fragment>
         <Container>
             
-          <Form style={{ padding: '200px', textAlign: 'center' }}>
+          <Form style={{ padding: '180px', textAlign: 'center' }}>
           <Form style={{textAlign: 'center' }}>
                 <FormLabel className="justify-content-md-center">
-                    Sign in 
+                    <h1>Sign in </h1>
                 </FormLabel>
             </Form>
             <Row className="justify-content-md-center">
@@ -62,8 +62,8 @@ const Login = (props) => {
                 </Form.Text>
             </Form.Group>
             </Row>
-            <Row className="justify-content-md-center">
-              <Button variant="primary" type="button" onClick={handleSubmit}>
+            <Row className="justify-content-md-center" >
+              <Button variant="primary"  type="button" size="lg" onClick={handleSubmit}>
                 Login
             </Button>
             </Row>
