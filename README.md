@@ -35,7 +35,7 @@
 * ######    "validator": "7.2.0"
 # Summary
 
-The Application  is similar to a blog/post website where the users can make posts, read and delete articles. Much like &quot; CrackWatch.com &quot; and &quot;GamesForum.com&quot; it displays user posts and allows the other part of the comunity to interact with each other. There are two types of roles are implemented in this project: Guest and user. Depending on the role you can have access to different parts and functionalities. Users: can create posts and view all available posts including their own in details.
+The Application  is similar to a blog/post website where the users can make posts, read and delete articles. Much like &quot; CrackWatch.com &quot; and &quot;GamesForum.com&quot; it displays user posts and allows the other part of the comunity to interact with each other. There are two types of roles are implemented in this project: Guest and User. Depending on the role you can have access to different parts and functionalities. Users: can create posts and view all available posts including their own in details.
 
 
 # Build
@@ -59,10 +59,12 @@ The Application  is similar to a blog/post website where the users can make post
 - About  button ( leading to about information page);
 - View Latest posts (by clicking Latest Posts button), see latest posts from users;
 - View My posts (by clicking My Posts button), see your posts;
+- View Profile page (by clicking Profile button), see your Profile;
+- Edit Profile (by clicking Edit Profile button in the Profile page), edit your profile;
 - Create post (by clicking Create Post button) - leads to a creation form for an new topic;
 - View Full post information about each post (by clicking its Full Post button);
--  Logout button (by clicking Logout button) user is LogedOut;
+- Logout button (by clicking Logout button) user is LogedOut;
 
 
 
-**Additionally**  the app offers Sign In page, Sign Up page, Logout option, About page, Home page, Create post, Delete post, Latest Posts, Full Post.
+**Additionally**  the app offers Sign In page, Sign Up page, Logout option, About page, Home page, Create post, Delete post, Latest Posts, Full Post, Profile page, Edit Profile page.
