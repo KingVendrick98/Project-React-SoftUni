@@ -7,11 +7,12 @@ const GuestLandingPage = (props) => {
 
     return (
         <div className='landingPage'>
-            <h1>Welcome to GameWatchers !</h1>
+            <h2>Welcome to GameWatchers !</h2>
             <h2>The heaven for Gamers</h2>
-            <p>
+            <h2>
             <Clock format={'HH:mm:ss'} ticking={true} timezone={'Sofia'} />
-            </p>
+           <p>Sofia/Bulgaria real time !</p> 
+            </h2>
         </div>
     );
 }

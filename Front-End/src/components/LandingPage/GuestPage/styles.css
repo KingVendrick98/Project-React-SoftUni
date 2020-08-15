@@ -15,6 +15,9 @@
 
 .landingPage h2 {
     font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .p{
     font-size: 100px;

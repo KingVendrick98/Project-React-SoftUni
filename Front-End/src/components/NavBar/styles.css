@@ -15,7 +15,7 @@ ul {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
   }
   
@@ -26,4 +26,9 @@ ul {
   
   li {
     display: inline-block;
+  }
+  .clocker {
+    margin-left: 6px;
+    padding: 20px ;
+    padding-top: 20px;
   }
