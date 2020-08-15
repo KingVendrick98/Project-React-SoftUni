@@ -6,9 +6,14 @@ import registerValidator from '../../utils/registerValidator'
 
 const Register = (props) => {
 
+  const [profilePic, setProfilePic] = useState('')
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
+
+  const updateProfilePic = e => {
+    setProfilePic(e.target.value)
+  }
 
   const updateName = e => {
     setUsername(e.target.value);
@@ -24,8 +29,8 @@ const Register = (props) => {
 
   const handleSubmit = () => {
 
-    if (registerValidator(username, password, rePassword)) {
-      userService.register(username, password).then(() => {
+    if (registerValidator(username, password, rePassword, profilePic)) {
+      userService.register(username, password, profilePic).then(() => {
         props.history.push('/login');
       });
     }
@@ -40,6 +45,12 @@ const Register = (props) => {
                     Sign up 
                 </Row>
             </Form>
+            <Row className="justify-content-md-center">
+            <Form.Group>
+              <Form.Label>Avatar:</Form.Label>
+              <Form.Control type="text" name="profilePic" style={{ textAlign: 'center' }} placeholder="Avatar" onChange={updateProfilePic} />
+            </Form.Group>
+          </Row>
           <Row className="justify-content-md-center">
             <Form.Group>
               <Form.Label>Username:</Form.Label>

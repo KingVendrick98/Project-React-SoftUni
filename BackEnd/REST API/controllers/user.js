@@ -21,8 +21,8 @@ module.exports = {
 
     post: {
         register: (req, res, next) => {
-            const { username, password } = req.body;
-            models.User.create({ username, password, job: 'Software developer', email: 'gameWatchers@gameWatchers.com', address:"Kaisa Hood Varna",phone:"0895764487" })
+            const { username, password, profilePic } = req.body;
+            models.User.create({ profilePic, username, password, job: 'Software developer', email: 'gameWatchers@gameWatchers.com', address:"Kaisa Hood Varna",phone:"0895764487", })
                 .then((createdUser) => res.send(createdUser))
                 .catch(next)
         },
@@ -58,8 +58,8 @@ module.exports = {
 
     put: (req, res, next) => {
         const id = req.params.id;
-        const { job, email, address, phone } = req.body;
-        models.User.update({ _id: id }, { job, email, address, phone })
+        const { job, email, address, phone, profilePic } = req.body;
+        models.User.update({ _id: id }, { job, email, address, phone, profilePic })
             .then((updatedUser) => res.send(updatedUser))
             .catch(next)
     },

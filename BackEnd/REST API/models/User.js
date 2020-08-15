@@ -8,6 +8,11 @@ const { String, Number, Boolean, ObjectId } = Schema.Types;
 
 const userSchema = new Schema({
 
+    profilePic:{
+        type: String,
+        required:true
+    },
+
     username: {
         type: String,
         unique: true,

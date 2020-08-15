@@ -1,7 +1,12 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function profileValidator(job, email, address, phone) {
+function profileValidator(job, email, address, phone, profilePic) {
+
+    if (profilePic === '' || profilePic.length < 6) {
+        toast.error('Avatar must be Valid !');
+        return false;
+    }
 
     if (job === '' || job.length < 6) {
         toast.error('Job must be at least 6 characters long !');

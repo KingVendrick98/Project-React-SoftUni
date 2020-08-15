@@ -10,15 +10,16 @@ const userService = {
         .catch(err => console.log(err));
     },
 
-    register: function (username, password) {
+    register: function (username, password,profilePic) {
         return axios.post(`${host}/user/register`, {
+            profilePic,
             username,
             password
         })
             .then(res => console.log(res))
             .catch(err => console.log(err));
     },
-    login: function (username, password) {
+    login: function (username, password,) {
         return axios.post(`${host}/user/login`, {
             username,
             password
@@ -33,8 +34,9 @@ const userService = {
             withCredentials: true
         }).then(res => console.log(res));
     },
-    edit: function (id,job,email,address,phone) {
+    edit: function (profilePic,id,job,email,address,phone) {
         return axios.put(`${host}/user/${id}`,{
+            profilePic,
                 job,
                 email,
                 address,

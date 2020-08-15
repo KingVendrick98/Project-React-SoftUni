@@ -11,11 +11,16 @@ const editProfile = (props) => {
 
     const [user, setUserStatus] = useContext(AuthContext);
 
+    const [profilePic, setProfilePic] = useState('')
     const [job, setJob] = useState('');
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
     const [phone, setPhone] = useState('');
   
+    const updateProfilePic = e => {
+        setProfilePic(e.target.value);
+    }
+
     const updateJob = e => {
         setJob(e.target.value);
     }
@@ -34,10 +39,10 @@ const editProfile = (props) => {
 
     const handleSubmit = () => {
 
-        if (profileValidator(job, email, address, phone)) {
+        if (profileValidator(job, email, address, phone, profilePic)) {
 
-            userService.edit(user.userId, job, email, address, phone).then(() => {
-                setUserStatus({ loggedIn: true, userId: user.userId, name: user.name, job, email, address, phone });
+            userService.edit(user.userId, job, email, address, phone, profilePic).then(() => {
+                setUserStatus({ loggedIn: true, userId: user.userId, name: user.name, job, email, address, phone , profilePic});
             }).then(() => {
                 props.history.push('/profile');
             });
@@ -49,6 +54,12 @@ const editProfile = (props) => {
             <Container>
                 {/* <button id="upload_widget" onClick={() => myWidget.open()} className="cloudinary-button">Upload avatar</button> */}
                 <Form style={{ marginTop: '150px', textAlign: 'center' }}>
+                <Row className="justify-content-md-center">
+                        <Form.Group>
+                            <Form.Label style={{ margin: '10'}}>Avatar:</Form.Label>
+                            <Form.Control img src={profilePic} name="profilePic" style={{ textAlign: 'center',margin: '10' }} placeholder="Enter avatar" onChange={updateProfilePic} />
+                        </Form.Group>
+                    </Row>
                     <Row className="justify-content-md-center">
                         <Form.Group>
                             <Form.Label style={{ margin: '10'}}>Job:</Form.Label>

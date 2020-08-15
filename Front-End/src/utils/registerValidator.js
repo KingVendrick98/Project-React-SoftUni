@@ -1,7 +1,12 @@
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function registerValidator(username, password, confirmPass) {
+function registerValidator(username, password, confirmPass, profilePic) {
+
+  if(profilePic === '' || profilePic.length < 3) {
+    toast.error('Avatar must be valid!');
+    return false;
+  }
   
   if(username === '' || username.length < 3) {
     toast.error('Username must be at least 3 characters long!');
