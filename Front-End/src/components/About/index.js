@@ -1,5 +1,7 @@
 import React from 'react';
 import './styles.css'
+import { Nav } from 'react-bootstrap';
+
 
 const AboutPage = () => {
     return (
@@ -14,6 +16,8 @@ const AboutPage = () => {
             </h2>
             
             <h1>From GameWatchers creators</h1>
+
+    <Nav.Link href="/register">Excited ? Join us !</Nav.Link>
         </div>
         
     );

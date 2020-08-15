@@ -14,6 +14,7 @@ const ProfilePage = (props) => {
             <div className="card-container">
 
                 <div className="upper-container">
+                    <h1>Profile</h1>
                     <div className="image-container">
                         <img src='/userIcon.png' alt="profile" />
                     </div>

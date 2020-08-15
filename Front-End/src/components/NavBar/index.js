@@ -11,7 +11,7 @@ function Navigation() {
             {user.loggedIn ?
                 <Fragment>
                     <li>
-                        <Link to="/latest"><strong>GameWatchers</strong></Link>
+                        <Link to="/"><strong>GameWatchers</strong></Link>
                     </li>
                     <li>
                         <Link to="/createPost">

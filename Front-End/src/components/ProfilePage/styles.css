@@ -14,24 +14,32 @@
 }
 
 .upper-container{
-    height: 70px;
-    background: rgb(148, 0, 0);
+    height: 45px;
+    background: rgb(30, 30, 30);
+}
+ 
+ h1 {
+    text-align: center;
+    margin-top: 1;
+
 }
 
 .image-container img{
     background: rgb(153, 153, 153);
     width: 80px;
     height: 80px;
-    border-radius: 60%;
-    padding: 5px;
-    transform: translate(105px,105px);
+    border-radius: 70%;
+    padding: 7px;
+    transform: translate(105px,5px);
+    margin-bottom: 1px;
+
 }
 
 .lower-container{
     height: 280px;
     background:white;
-    padding: 20px;
-    padding-top: 40px;
+    padding: 10px;
+    padding-top: 60px;
     text-align: center;
 }
 
