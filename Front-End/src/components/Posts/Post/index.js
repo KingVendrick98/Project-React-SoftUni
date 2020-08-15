@@ -9,8 +9,8 @@ const Post = ({ id, title, description, author, pictureUrl }) => {
             <Card border="secondary" className="text-center" style={{ width: '18rem' }}>
                 <Card.Img variant="top" img src={pictureUrl} className="card-image"/>
                 <Card.Body>
-                    <Card.Title style={{ textAlign:"center", fontWeight:"bold"}}>{title}</Card.Title>
-                    <Card.Text style={{ maxWidth:'500ch'}}>
+                    <Card.Title style={{ textAlign:"center", fontWeight:"bold", }}>{title}</Card.Title>
+                    <Card.Text className="fixText">
                         {description}
                     </Card.Text>
                     <Link to={`/post/${id}`}> <Button variant="primary">Full Post</Button> </Link>

@@ -19,7 +19,7 @@ const MyPosts = (props) => {
 
     return (
         posts.length !== 0 ?
-            <div> {posts.map(post => {
+            <div className="fix"> {posts.map(post => {
                         return <Post
                             key={post._id}
                             id={post._id}
