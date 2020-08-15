@@ -2,7 +2,6 @@ import React, { useContext, Fragment } from 'react'
 import { Link } from 'react-router-dom';
 import './styles.css'
 import AuthContext from '../../contexts/auth';
-import Clock from 'react-live-clock';
 
 function Navigation() {
     const [user] = useContext(AuthContext);
@@ -61,6 +60,7 @@ function Navigation() {
                     <i className="fas fa-info-circle"></i> About
                 </Link>
             </li>
+
         </ul>
     );
 }

@@ -17,7 +17,7 @@ const AboutPage = () => {
 
             <h1>From GameWatchers creators</h1>
 
-    <Nav.Link href="/register">Excited ? Join us !</Nav.Link>
+    <Nav.Link href="/register"><h2>Excited ? Join us !</h2></Nav.Link>
         </div>
         
     );

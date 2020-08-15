@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { Button,Card } from 'react-bootstrap';
 import AuthContext from '../../contexts/auth';
 import ReactImageAppear from 'react-image-appear'
-
 const ProfilePage = (props) => {   
 
     const [user] = useContext(AuthContext);

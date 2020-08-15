@@ -63,7 +63,7 @@ const Login = (props) => {
             </Form.Group>
             </Row>
             <Row className="justify-content-md-center" >
-              <Button variant="primary"  type="button" size="lg" onClick={handleSubmit}>
+              <Button variant="dark"  type="button" size="lg" onClick={handleSubmit}>
                 Login
             </Button>
             </Row>
