@@ -10,7 +10,7 @@ const GuestLandingPage = (props) => {
             <h2>Welcome to GameWatchers !</h2>
             <h2>The heaven for Gamers</h2>
             <h2>
-            <Clock format={'HH:mm:ss'} ticking={true} timezone={'Sofia'} />
+            <Clock format={"dddd, MMMM Do YYYY, h:mm:ss a"}  ticking={true} timezone={'Sofia'} />
            <p>Sofia/Bulgaria real time !</p> 
             </h2>
         </div>

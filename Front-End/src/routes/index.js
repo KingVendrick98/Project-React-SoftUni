@@ -15,7 +15,7 @@ import editProfile from '../components/ProfilePage/editProfile';
 import CreatePost from '../components/Posts/CreatePost';
 import MyPosts from '../components/Posts/myPosts';
 import FullPost from '../components/Posts/FullPost';
-import LatestPosts from '../components/Posts/LatestPosts';
+import LatestPost from '../components/Posts/LatestPosts'
 
 const Navigation = () => {
     return (
@@ -33,7 +33,7 @@ const Navigation = () => {
                     <Route path="/createPost" exact component={CreatePost} />
                     <Route path="/myPosts" exact component={MyPosts} />
                     <Route path="/post/:id" component={FullPost} />
-                    <Route path="/latest" exact component={LatestPosts} />
+                    <Route path="/latest" exact component={LatestPost} />
                 </Switch>
                 <ToastContainer
                     position="top-center"
